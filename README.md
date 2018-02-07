@@ -1,6 +1,6 @@
-# Class Tax
+# IDTax (Indonesian Tax Class PHP)
 
-Note: Kumpulan Class Class untuk Perhitungan Perpajakan sesuai Peraturan Perpajakan Indonesia.
+Note: Library PHP Class for Tax in Indonesian Regulation.
 
 
 * PPh21 (Pajak Penghasilan) Untuk Wajib Pajak Dalam Negeri.
@@ -139,6 +139,7 @@ $y = $tax->getTax(true, true); # getTax($a, $b) : $a => ( false = gross, true = 
 (The MIT license)
 
 Copyright (c) 2018 Ade Sanusi.
+QueenApp | IDTax
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
