@@ -1,6 +1,6 @@
 # IDTax (Indonesian Tax Class PHP)
 
-Note: Library PHP Class for Tax in Indonesian Regulation.
+Note: Library PHP Class for Tax in Indonesian Regulation : [PER16-PJ-2016](http://www.pajak.go.id/sites/default/files/info-pajak/PER16-PJ-2016.pdf) or look at "regulations" directory.
 
 
 * PPh21 (Pajak Penghasilan) Untuk Wajib Pajak Dalam Negeri.
@@ -42,7 +42,7 @@ Or check example.php file.
 
 ## Features
 
-* PPh21
+* PPh21 ( Tax Method : Gross & Gross Up , Tax Result : Regular Tax Yearly, Regular Tax Monthly & Irregular Tax)
 * PPh26
 * _Coming Soon :)_
 
