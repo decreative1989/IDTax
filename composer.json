@@ -3,6 +3,10 @@
     "classmap": [
       "src/Tax/PPh21.php"
     ]
+  },
+
+  "require": {
+    "ropendev/datatablesphp": "^0.0.95"
   }
 }
 
