@@ -11,6 +11,15 @@ Created by: [Ade Sanusi](https://facebook.com/de.creative).
 
 
 ## Installation
+#### Git ###
+
+Download or Clone this Project in your localhost directory:
+
+```
+https://github.com/decreative1989/IDTax.git
+```
+
+#### Composer ###
 Installation is easy using Composer. Include the following in your composer.json
 ```
 {
@@ -35,7 +44,7 @@ Or check example.php file.
 
 * PPh21
 * PPh26
-* _Segera menyusul :)_
+* _Coming Soon :)_
 
 
 ## Example Usage
@@ -128,7 +137,7 @@ $y = $tax->getTax(true, true); # getTax($a, $b) : $a => ( false = gross, true = 
 
 ## Credits
 
-* Class Tax is based on the concept of [Ade Sanusi][as].
+* Class IDTax is based on the concept of [Ade Sanusi][as].
 
 [as]: http://facebook.com/de.creative
 
