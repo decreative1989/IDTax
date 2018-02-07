@@ -10,7 +10,7 @@ Note: Library PHP Class for Tax in Indonesian Regulation.
 Created by: [Ade Sanusi](https://facebook.com/de.creative).
 
 
-## Instalasi
+## Installation
 Installation is easy using Composer. Include the following in your composer.json
 ```
 {
@@ -40,7 +40,7 @@ Or check example.php file.
 
 ## Example Usage
 
-**Example:**
+**Reference from example.php:**
 
 ```php
 <?php
