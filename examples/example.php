@@ -6,7 +6,7 @@
  * Time: 13.52
  */
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 use QueenApp\Tax\PPh21;
 
 $arrEmployee = [
