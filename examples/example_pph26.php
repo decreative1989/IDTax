@@ -27,6 +27,8 @@ echo '<br/>';
 echo '<br/>';
 echo '<br/>';
 
+unset($taxGrossUp);
+
 $taxGross = new PPh26\PPh26(false);
 $taxGross->calculateTax($fltGaji);
 $tax = $taxGross->getTax();
@@ -37,3 +39,5 @@ echo 'Pajak Yang Harus Dibayar :' . number_format($tax, 0, ',', '.');
 echo '<br/>';
 echo '<br/>';
 echo '<br/>';
+
+unset($taxGross);

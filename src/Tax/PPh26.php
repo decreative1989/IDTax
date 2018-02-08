@@ -34,9 +34,9 @@ class PPh26
     {
         $this->baseTax = $baseTax;
         if ($this->bolGrossUp === true) {
-            $this->calculateTaxGross();
-        } else {
             $this->calculateTaxGrossUp();
+        } else {
+            $this->calculateTaxGross();
         }
     }
 
@@ -95,7 +95,7 @@ class PPh26
      */
     public function getTax()
     {
-        return $this->fltTaxAllowance;
+        return $this->fltTax;
     }
 
     /**
