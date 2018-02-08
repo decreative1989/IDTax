@@ -1,7 +1,8 @@
 {
   "autoload": {
     "classmap": [
-      "src/Tax/PPh21.php"
+      "src/Tax/PPh21.php",
+      "src/Tax/PPh26.php"
     ]
   },
 
