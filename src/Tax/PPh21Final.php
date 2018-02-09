@@ -57,6 +57,7 @@ class PPh21Final extends PPh21
     public function __construct($bolGrossUp = false)
     {
         parent::__construct($bolGrossUp);
+        $this->bolGrossUp = $bolGrossUp;
     }
 
     /**
@@ -117,12 +118,11 @@ class PPh21Final extends PPh21
 
         while ($bolIteration === true) {
 
-            $fltNet = $baseTax + $fltTaxAllowance;
-
             $fltTax = $this->calculateLayerTaxFinal();
 
             if ((abs($fltTax - $fltTaxAllowance) >= $fltDelta)) {
                 $fltTaxAllowance = ($fltTax + $fltTaxAllowance) / 2;
+                $this->baseTax = $baseTax + $fltTaxAllowance;
             } else {
                 $bolIteration = false;
             }
@@ -130,8 +130,6 @@ class PPh21Final extends PPh21
 
         $this->fltTaxAllowance = $fltTax;
         $this->fltTax = $fltTax;
-
-        $this->baseTax = $this->baseTax + $this->fltTaxAllowance;
 
         return $this->fltTax;
     }
@@ -168,7 +166,7 @@ class PPh21Final extends PPh21
 
         } elseif ($this->taxType === 'pensiun') {
             if ($this->baseTax > $this->fltBatasMinTarif) {
-                $fltTax = $this->fltBatasMinTarif * 0.05; # 5 %
+                $fltTax = $this->baseTax * 0.05; # 5 %
             }
         } else {
             return false;
