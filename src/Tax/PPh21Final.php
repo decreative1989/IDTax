@@ -62,9 +62,10 @@ class PPh21Final extends PPh21
     /**
      * @param string $taxType
      */
-    public function calculateTaxFinal($taxType = '')
+    public function calculateTaxFinal($taxType = '', $fltBaseTax = 0)
     {
         $this->taxType = $taxType;
+        $this->baseTax = $fltBaseTax;
         if ($this->checkValidTaxType() === true) {
             if ($this->bolGrossUp === true) {
                 $this->calculateTaxFinalGrossUp();
@@ -94,12 +95,18 @@ class PPh21Final extends PPh21
     }
 
 
+    /**
+     * @return float
+     */
     private function calculateTaxFinalGross()
     {
         $this->calculateLayerTaxFinal();
         return $this->getFinalTax();
     }
 
+    /**
+     * @return bool|float|int
+     */
     private function calculateTaxFinalGrossUp()
     {
         $fltDelta = 0.01;
@@ -170,5 +177,21 @@ class PPh21Final extends PPh21
         $this->fltTax = $fltTax;
 
         return $this->fltTax;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBaseTax()
+    {
+        return $this->baseTax;
+    }
+
+    /**
+     * @return float
+     */
+    public function getFinalTaxAllowance()
+    {
+        return $this->fltTaxAllowance;
     }
 }
