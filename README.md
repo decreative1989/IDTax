@@ -33,6 +33,13 @@ Installation is easy using Composer. Include the following in your composer.json
 }
 ```
 
+After Update composer.json file, get update composer via command line:
+```
+composer update
+```
+
+### Manual ###
+
 You may also manually include the PPh21.php file
 ```php
 require 'src/Tax/PPh21.php';;
@@ -42,9 +49,10 @@ Or check example.php file.
 
 ## Features
 
-* PPh21 ( Tax Method : Gross & Gross Up , Tax Result : Regular Tax Yearly, Regular Tax Monthly & Irregular Tax)
-* PPh26
-* _Coming Soon :)_
+* PPh21 ( Tax Method : Gross & Gross Up , Tax Result : Regular Tax Yearly, Regular Tax Monthly & Irregular Tax) => **example.php**
+* PPh21Final ( Pajak Final Pesangon dan Pajak Final Pensiun ) => **example_pph21_final.php**
+* PPh26 ( Tax Method : Gross & Gross Up) => **example_pph26.php**
+
 
 
 ## Example Usage
