@@ -8,10 +8,7 @@
   },
 
   "require": {
-    "ropendev/datatablesphp": "^0.0.95"
+    "ropendev/datatablesphp": "^0.0.95",
+    "tecnickcom/tcpdf": "^6.2"
   }
 }
-
-
-
-
