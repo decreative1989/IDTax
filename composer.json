@@ -3,10 +3,10 @@
     "classmap": [
       "src/Tax/PPh21.php",
       "src/Tax/PPh21Final.php",
-      "src/Tax/PPh26.php"
+      "src/Tax/PPh26.php",
+      "src/Tax/A1Report.php"
     ]
   },
-
   "require": {
     "ropendev/datatablesphp": "^0.0.95",
     "tecnickcom/tcpdf": "^6.2"
